@@ -1,0 +1,44 @@
+{
+  "properties": [
+    {
+      "name": "observability.http.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Habilita logs estruturados HTTP com traceId",
+      "defaultValue": true
+    },
+    {
+      "name": "observability.http.excluded-paths",
+      "type": "java.util.Set",
+      "description": "Paths excluídos do logging HTTP",
+      "defaultValue": ["/actuator/health", "/actuator/metrics", "/favicon.ico"]
+    },
+    {
+      "name": "observability.kafka.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Habilita observabilidade Kafka com traceId",
+      "defaultValue": true
+    },
+    {
+      "name": "observability.masking.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Habilita mascaramento de dados sensíveis",
+      "defaultValue": true
+    },
+    {
+      "name": "observability.masking.mask-value",
+      "type": "java.lang.String",
+      "description": "Valor usado para mascarar campos sensíveis",
+      "defaultValue": "***MASKED***"
+    },
+    {
+      "name": "observability.masking.full-mask-fields",
+      "type": "java.util.Set",
+      "description": "Campos que serão mascarados completamente"
+    },
+    {
+      "name": "observability.masking.partial-mask-fields",
+      "type": "java.util.Set",
+      "description": "Campos com mascaramento parcial (CPF/CNPJ)"
+    }
+  ]
+}
