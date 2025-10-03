@@ -1,0 +1,3 @@
+logging:
+  masking:
+    enabled: true  # ou false para desabilitar
